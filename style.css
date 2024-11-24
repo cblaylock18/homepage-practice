@@ -18,3 +18,149 @@
     font-style: normal;
 }
 
+body {
+    font-family: "afacad_fluxregular", monospace;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "funnel_displaylight", monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.github,
+.linkedin,
+.twitter,
+.share {
+    max-width: 50px;
+}
+
+header {
+    position: relative;
+}
+
+.diagonal-background {
+    margin: 0;
+    background-color: teal;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 45%);
+    z-index: -1;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/imgs/guanaco-header.jpg);
+    background-size: cover;
+    background-position: bottom 50% left 75%;
+    margin: 2rem;
+    padding: 1rem;
+    min-height: 500px;
+    justify-content: end;
+    text-align: left;
+    color: white;
+    text-shadow: 2px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h1,
+.project {
+    box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.about-content {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 6rem;
+}
+
+.header-link {
+    flex: 0 0 50px;
+}
+
+.my-work-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.project {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 6fr 1fr 3fr;
+    margin: 1rem;
+}
+
+.project > * {
+    margin: 0;
+}
+
+.project-link {
+    min-width: 30px;
+    align-self: center;
+}
+
+.project-screenshot {
+    grid-area: 1 / 1 / 2 / 3;
+    align-content: center;
+    font-size: 4.5rem;
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+.project-header {
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 2rem;
+    align-self: center;
+    font-size: 1.8rem;
+}
+
+.project-links {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Make sure to make links to projects accessible */
+
+.project-description {
+    grid-area: 3 / 1 / 4 / 3;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.project-screenshot-1 {
+    background-color: rgb(120, 90, 255);
+}
+
+.footer-image {
+    max-width: 100%;
+}
