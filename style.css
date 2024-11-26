@@ -1,3 +1,7 @@
+:root {
+    --main-blue: teal;
+}
+
 @font-face {
     font-family: "afacad_fluxregular";
     src: url("./fonts/afacadflux-variablefont_slntwght-webfont.woff2")
@@ -50,7 +54,7 @@ header {
 
 .diagonal-background {
     margin: 0;
-    background-color: teal;
+    background-color: var(--main-blue);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -110,6 +114,13 @@ ul {
     margin: 0.5rem;
 }
 
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
 .project {
     min-height: 500px;
     display: grid;
@@ -130,10 +141,11 @@ ul {
 .project-screenshot {
     grid-area: 1 / 1 / 2 / 3;
     align-content: center;
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-align: center;
     color: white;
     height: 100%;
+    padding: 0 1.5rem;
 }
 
 .project-header {
@@ -149,8 +161,6 @@ ul {
     gap: 1rem;
 }
 
-/* Make sure to make links to projects accessible */
-
 .project-description {
     grid-area: 3 / 1 / 4 / 3;
     padding: 1rem;
@@ -161,6 +171,65 @@ ul {
     background-color: rgb(120, 90, 255);
 }
 
+.project-screenshot-2 {
+    background-color: rgb(190, 117, 20);
+}
+
+.project-screenshot-3 {
+    background-color: rgb(0, 155, 46);
+}
+
+.project-screenshot-4 {
+    background-color: rgb(235, 41, 209);
+}
+
+.project-screenshot-5 {
+    background-color: rgb(32, 157, 230);
+}
+
+.project-screenshot-6 {
+    background-color: rgb(17, 146, 0);
+}
+
+footer {
+    background-color: var(--main-blue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+footer > * {
+    margin: 0;
+}
+
+.contact-me {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.contact-me-sentence {
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+address, .telephone {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.email {
+    font-size: 1rem;
+    padding: 0 1rem;  
+}
+
+.footer-link {
+    flex: 0 0 75px;
+}
+
 .footer-image {
+    justify-self: end
     max-width: 100%;
 }
