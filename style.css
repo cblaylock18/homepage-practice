@@ -215,14 +215,15 @@ footer > * {
     padding: 0 1rem;
 }
 
-address, .telephone {
+address,
+.telephone {
     font-size: 1.5rem;
     padding: 0 1rem;
 }
 
 .email {
     font-size: 1rem;
-    padding: 0 1rem;  
+    padding: 0 1rem;
 }
 
 .footer-link {
@@ -230,6 +231,6 @@ address, .telephone {
 }
 
 .footer-image {
-    justify-self: end
+    justify-self: end;
     max-width: 100%;
 }
