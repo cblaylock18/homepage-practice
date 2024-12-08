@@ -125,7 +125,7 @@ ul {
     min-height: 500px;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    grid-template-rows: 6fr 1fr 3fr;
+    grid-template-rows: 4.5fr 1fr 3fr;
     margin: 1rem;
 }
 
@@ -402,4 +402,161 @@ address,
 }
 
 @media (min-width: 1025px) {
+    .diagonal-background {
+        clip-path: polygon(0 0, 100% 0, 100% 45%, 0 80%);
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        margin-bottom: 5rem;
+        padding: 3rem;
+    }
+
+    h1 {
+        grid-area: 1 / 1 / 4 / 2;
+        min-height: 350px;
+        font-size: 3.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 > div {
+        text-align: center;
+    }
+
+    .about-header {
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 2.5rem;
+        text-align: left;
+        margin: 5rem 0 0 1rem;
+        padding-left: 1rem;
+    }
+
+    .about-content {
+        grid-area: 2 / 2 / 3 / 3;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
+
+    header::before {
+        content: "";
+        grid-area: 1 / 2 / 4 / 3;
+        box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        margin: 2.5rem 0;
+    }
+
+    .header-social-links {
+        grid-area: 3 / 2 / 4 / 3;
+        place-self: end;
+        margin-bottom: 4rem;
+        margin-left: 0;
+        margin-right: 3rem;
+        gap: 2px;
+        justify-content: space-around;
+    }
+
+    .header-link > li {
+        height: 2rem;
+    }
+
+    .header-link > a > svg {
+        height: 2rem;
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        margin: 0 2rem 6rem;
+    }
+
+    .my-work-header {
+        grid-area: 1 / 1 / 2 / 4;
+        justify-self: start;
+        align-self: end;
+        margin: 0 1.5rem;
+        font-size: 3rem;
+    }
+
+    .project-screenshot {
+        font-size: 2.8rem;
+    }
+
+    .project {
+        grid-template-rows: 225px 50px 150px;
+        min-height: auto;
+    }
+
+    .project-header {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    .project-links {
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    footer {
+        padding: 3rem 3rem 0;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 0;
+    }
+
+    .footer-left {
+        align-self: flex-start;
+    }
+
+    .footer-right {
+        min-width: none;
+        max-height: 30rem;
+    }
+
+    .footer-image {
+        object-fit: cover;
+    }
+
+    .contact-me {
+        text-align: left;
+        padding-left: 1rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .contact-me-sentence {
+        font-size: 1.5rem;
+    }
+
+    .telephone,
+    .email {
+        display: flex;
+        gap: 10px;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .phone-icon,
+    .email-icon {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .footer-social-links {
+        justify-content: left;
+        padding-left: 1rem;
+        margin-top: 2rem;
+    }
 }
