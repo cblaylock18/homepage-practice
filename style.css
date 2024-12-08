@@ -168,7 +168,7 @@ ul {
 }
 
 .project-screenshot-1 {
-    background-color: rgb(120, 90, 255);
+    background-color: rgb(120, 90, 260);
 }
 
 .project-screenshot-2 {
@@ -176,7 +176,7 @@ ul {
 }
 
 .project-screenshot-3 {
-    background-color: rgb(0, 155, 46);
+    background-color: rgb(0, 160, 46);
 }
 
 .project-screenshot-4 {
@@ -215,10 +215,16 @@ footer > * {
     padding: 0 1rem;
 }
 
+.phone-icon,
+.email-icon {
+    display: none;
+}
+
 address,
 .telephone {
     font-size: 1.5rem;
     padding: 0 1rem;
+    font-style: normal;
 }
 
 .email {
@@ -228,6 +234,17 @@ address,
 
 .footer-link {
     flex: 0 0 75px;
+}
+
+.footer-left,
+.footer-right {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-right {
+    display: flex;
+    align-content: end;
 }
 
 .footer-image {
@@ -248,39 +265,139 @@ address,
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 10rem);
+        margin-bottom: 5rem;
     }
 
     h1 {
         grid-area: 1 / 1 / 3 / 2;
-        /* margin: 2rem;
-        padding: 1rem; */
-        position: absolute;
+        position: relative;
         min-height: 400px;
         justify-content: start;
         text-align: right;
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+
+    h1 > div {
+        position: absolute;
+        right: -100%;
+        top: 30px;
     }
 
     .about-header {
         grid-area: 2 / 2 / 3 / 3;
+        margin: 0;
+        margin-right: 6rem;
+        align-self: center;
+        z-index: 1;
+        font-size: 2.5rem;
     }
 
     .about-content::before {
         content: "";
-        grid-area: 3 / 1 / 4 / 2;
         margin: 0;
         padding: 0;
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
         float: left;
-        shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        shape-outside: polygon(0 0, 100% 0, 100% 25%, 50% 25%, 50% 60%, 0 60%);
+        clip-path: polygon(0 0, 100% 0, 100% 25%, 50% 25%, 50% 60%, 0 60%);
     }
 
     .about-content {
-        grid-area: 3 / 1 / 5 / 3;
-        padding-left: 4rem;
-        padding-right: 3rem;
+        grid-area: 2 / 1 / 5 / 3;
+        margin: 0 4rem 1rem;
+        padding: 0 2rem;
+        box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.2);
+        background-color: white;
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin: 0 3rem 15rem;
+    }
+
+    .my-work-header {
+        grid-area: 1 / 1 / 2 / 3;
+        justify-self: start;
+        align-self: end;
+        margin: 0 1rem;
+        font-size: 3rem;
+    }
+
+    .project {
+        min-height: 300px;
+        margin: 1rem 1.5rem;
+    }
+
+    .project-screenshot {
+        font-size: 3.2rem;
+    }
+
+    .project-header {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        padding-left: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    .project-links {
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .project-5,
+    .project-6 {
+        justify-self: end;
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 3rem 3rem 4rem;
+        display: grid;
+        grid-template-columns: 11fr 9fr;
+        gap: 0;
+    }
+
+    .footer-left {
+        align-self: center;
+    }
+
+    .contact-me {
+        text-align: left;
+        padding-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    .contact-me-sentence {
+        font-size: 1.5rem;
+    }
+
+    .telephone,
+    .email {
+        display: flex;
+        gap: 10px;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .phone-icon,
+    .email-icon {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .footer-social-links {
+        justify-content: left;
+        padding-left: 1rem;
     }
 }
 
