@@ -26,8 +26,8 @@ A responsive homepage built as part of The Odin Project's Advanced HTML/CSS curr
 
 **[View Demo on Github Pages](https://cblaylock18.github.io/homepage-practice/)**
 
-<img src="(https://github.com/user-attachments/assets/7cfe966f-ee2a-419b-a37d-0ff49658cd05)
-" alt="screenshot of live site"/>
+<img src="https://github.com/user-attachments/assets/7cfe966f-ee2a-419b-a37d-0ff49658cd05"
+ alt="screenshot of live site"/>
 
 ---
 
